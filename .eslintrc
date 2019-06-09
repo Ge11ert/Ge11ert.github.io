@@ -1,8 +1,6 @@
-root: true
-
-env:
-  browser: true
-  amd: true
-
-extends:
-  "htmlacademy/es5"
+{
+  "extends": "eslint-config-airbnb-base",
+  "env": {
+    "browser": true
+  }
+}
