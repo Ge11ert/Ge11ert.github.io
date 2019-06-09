@@ -12,6 +12,7 @@
     "csso-webpack-plugin": "1.0.0-beta.12",
     "eslint": "5.16.0",
     "eslint-config-airbnb": "17.1.0",
+    "eslint-import-resolver-webpack": "0.11.1",
     "eslint-plugin-import": "2.17.3",
     "eslint-plugin-svelte3": "1.2.3",
     "fibers": "4.0.1",
