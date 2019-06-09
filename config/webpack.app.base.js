@@ -1,7 +1,8 @@
+/* eslint-disable import/no-extraneous-dependencies, global-require  */
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin').CleanWebpackPlugin;
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const sass = require('sass');
 const Fiber = require('fibers');
@@ -14,7 +15,7 @@ module.exports = {
   name: 'base',
   mode: 'none',
   entry: {
-    app: ['./src/app.js']
+    app: ['./src/app.js'],
   },
   output: {
     path: path.resolve(projectBaseDir, projectDistDir),
@@ -38,7 +39,7 @@ module.exports = {
             emitCss: environment !== 'dev',
             hotReload: environment === 'dev',
           },
-        }
+        },
       },
       {
         test: /\.scss$/,
@@ -48,7 +49,7 @@ module.exports = {
             loader: 'css-loader',
             options: {
               sourceMap: environment === 'dev',
-            }
+            },
           },
           {
             loader: 'postcss-loader',
@@ -70,7 +71,7 @@ module.exports = {
               includePaths: [path.resolve('src')],
             },
           },
-        ]
+        ],
       },
       {
         test: /\.(webp|png|jpg|jpeg|gif)$/,
@@ -106,5 +107,5 @@ module.exports = {
   },
   performance: {
     hints: false,
-  }
+  },
 };

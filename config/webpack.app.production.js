@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies  */
 const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const Csso = require('csso-webpack-plugin').default;
@@ -24,6 +25,6 @@ module.exports = {
     ],
     splitChunks: {
       chunks: 'all',
-    }
+    },
   },
 };
