@@ -1,9 +1,10 @@
 @import 'common/stylesheets/breakpoints';
+@import '../page.vars';
 
 .page__stripe {
-  padding: 20px 15px;
+  padding: $padding-vertical-mobile $padding-horizontal-mobile;
 
   @media (min-width: $tablet) {
-    padding: 40px 30px;
+    padding: $padding-vertical-desktop $padding-horizontal-desktop;
   }
 }
