@@ -1,0 +1,5 @@
+@import 'common/stylesheets/mixins';
+
+.navigation__logo-text {
+  @include visually-hidden;
+}

@@ -1,0 +1,24 @@
+@import 'common/stylesheets/mixins';
+@import 'common/stylesheets/colour-palette';
+@import 'common/stylesheets/breakpoints';
+
+.navigation_opened {
+  background-color: rgba($dark-blue, 1);
+
+  .navigation__menu {
+    display: flex;
+    background-color: rgba($dark-blue, 1);
+  }
+
+  .navigation__button {
+    background-image: url('./navigation_opened--navigation__button.svg');
+  }
+
+  @media (min-width: $tablet) {
+    background-color: rgba($dark-blue, 0.85);
+
+    .navigation__menu {
+      background-color: transparent;
+    }
+  }
+}

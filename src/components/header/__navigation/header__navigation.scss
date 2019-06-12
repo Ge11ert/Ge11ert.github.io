@@ -1,0 +1,16 @@
+@import 'common/stylesheets/breakpoints';
+@import 'components/header/header.vars';
+@import 'components/page/page.vars';
+
+.header__navigation {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  height: $header-navigation-height;
+  padding: 0 $padding-horizontal-mobile;
+
+  @media (min-width: $tablet) {
+    padding: 0 $padding-horizontal-desktop;
+  }
+}
