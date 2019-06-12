@@ -1,0 +1,8 @@
+@import 'common/stylesheets/colour-palette';
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: rgba($dark-blue, 0.85);
+}

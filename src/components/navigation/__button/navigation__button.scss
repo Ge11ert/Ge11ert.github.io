@@ -1,0 +1,15 @@
+@import 'common/stylesheets/breakpoints';
+
+.navigation__button {
+  display: block;
+  width: 60px;
+  height: 100%;
+  padding: 0;
+  background: transparent url('./navigation__button.svg') center no-repeat;
+  background-size: 30px 21px;
+  border: none;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
