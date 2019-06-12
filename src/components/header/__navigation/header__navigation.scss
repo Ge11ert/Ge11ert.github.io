@@ -3,6 +3,10 @@
 @import 'components/page/page.vars';
 
 .header__navigation {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
   height: $header-navigation-height;
   padding: 0 $padding-horizontal-mobile;
 

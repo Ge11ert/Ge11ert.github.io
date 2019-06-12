@@ -1,0 +1,17 @@
+@import 'common/stylesheets/breakpoints';
+
+.header__banner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+
+  @media (min-width: $tablet) {
+    height: 430px;
+  }
+
+  @media (min-width: $laptop) {
+    height: 550px;
+  }
+}
