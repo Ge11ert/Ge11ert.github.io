@@ -1,0 +1,11 @@
+.content-section_type_education {
+  .content-section__title {
+    &::before {
+      background-image: url('./content-section_type_education.svg');
+    }
+
+    &::after {
+      content: 'Education';
+    }
+  }
+}

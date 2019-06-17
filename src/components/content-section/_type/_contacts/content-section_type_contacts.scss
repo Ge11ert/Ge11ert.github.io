@@ -1,0 +1,11 @@
+.content-section_type_contacts {
+  .content-section__title {
+    &::before {
+      background-image: url('./content-section_type_contacts.svg');
+    }
+
+    &::after {
+      content: 'Contacts';
+    }
+  }
+}

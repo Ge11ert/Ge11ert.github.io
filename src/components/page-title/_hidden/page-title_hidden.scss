@@ -1,0 +1,5 @@
+@import 'common/stylesheets/mixins';
+
+.page-title_hidden {
+  @include visually-hidden;
+}
