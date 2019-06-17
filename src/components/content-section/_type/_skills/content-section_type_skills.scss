@@ -1,0 +1,12 @@
+.content-section_type_skills {
+  .content-section__title {
+    &::before {
+      height: 52px;
+      background-image: url('./content-section_type_skills.svg');
+    }
+
+    &::after {
+      content: 'My skills';
+    }
+  }
+}
