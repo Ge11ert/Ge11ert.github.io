@@ -1,0 +1,5 @@
+@import 'common/stylesheets/mixins';
+
+.social-list__link-text {
+  @include visually-hidden;
+}
