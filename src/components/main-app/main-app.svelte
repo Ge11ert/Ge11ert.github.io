@@ -5,6 +5,7 @@
   import Navigation from 'components/navigation';
   import HeaderBanner from 'components/header-banner';
   import ContentSection from 'components/content-section';
+  import AboutMe from 'components/about-me';
 </script>
 
 <Page>
@@ -27,7 +28,7 @@
           title="Обо мне"
           mods="{{ type: 'about-me' }}"
         >
-          TODO
+          <AboutMe></AboutMe>
         </ContentSection>
       </Page__Stripe>
 

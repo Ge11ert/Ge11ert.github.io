@@ -1,0 +1,14 @@
+@import 'common/stylesheets/colour-palette';
+@import 'common/stylesheets/breakpoints';
+
+.about-me__photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 5px rgba($black, 0.3);
+
+  @media (min-width: $laptop) {
+    width: 240px;
+    height: 240px;
+  }
+}

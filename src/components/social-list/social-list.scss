@@ -1,0 +1,6 @@
+@import 'common/stylesheets/mixins';
+
+.social-list {
+  @include list-reset;
+  display: flex;
+}

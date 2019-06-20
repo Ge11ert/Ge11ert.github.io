@@ -79,7 +79,14 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        loader: 'file-loader?name=images/[hash].[ext]',
+        use: [
+          {
+            loader: 'svg-sprite-loader',
+            options: {
+              symbolId: 'svg-symbol-[name]-[hash]',
+            },
+          },
+        ],
       },
       {
         test: /\.(woff|woff2|ttf|otf|eot)$/,
