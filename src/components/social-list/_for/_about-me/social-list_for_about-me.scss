@@ -1,0 +1,23 @@
+@import 'common/stylesheets/breakpoints';
+
+.social-list_for_about-me {
+  flex-direction: column;
+
+  .social-list__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+
+    .social-list__item {
+      &:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 24px;
+      }
+    }
+  }
+}
