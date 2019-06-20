@@ -1,0 +1,17 @@
+@import 'common/stylesheets/breakpoints';
+
+.about-me__social-list {
+  position: absolute;
+  top: -12px;
+  right: 50%;
+  transform: translateX(130px);
+
+  @media (min-width: $mobile-mid) {
+    transform: translateX(150px);
+  }
+
+  @media (min-width: $tablet) {
+    position: static;
+    transform: none;
+  }
+}

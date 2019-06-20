@@ -1,0 +1,7 @@
+@import 'common/stylesheets/breakpoints';
+
+.about-me {
+  @media (min-width: $laptop) {
+    display: flex;
+  }
+}
