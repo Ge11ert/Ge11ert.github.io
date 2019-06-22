@@ -6,6 +6,7 @@
   import HeaderBanner from 'components/header-banner';
   import ContentSection from 'components/content-section';
   import AboutMe from 'components/about-me';
+  import SkillsList from 'components/skills-list';
 </script>
 
 <Page>
@@ -37,7 +38,7 @@
           title="Мои навыки"
           mods="{{ type: 'skills' }}"
         >
-          TODO
+          <SkillsList></SkillsList>
         </ContentSection>
       </Page__Stripe>
 
