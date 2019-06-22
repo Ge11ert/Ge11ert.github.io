@@ -1,0 +1,36 @@
+@import 'common/stylesheets/breakpoints';
+
+.skills-list__item {
+  width: 50%;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+
+  &:nth-child(even) {
+    padding-left: 7%;
+  }
+
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $mobile-mid) {
+    width: 33%;
+    margin-bottom: 60px;
+
+    &:nth-child(2n) {
+      padding-left: 0;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 25%;
+    font-size: 18px;
+
+    &:nth-last-child(-n + 4) {
+      margin-bottom: 0;
+    }
+  }
+}
