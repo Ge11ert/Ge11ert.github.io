@@ -1,0 +1,5 @@
+@import 'common/stylesheets/mixins';
+
+.education__head {
+  @include visually-hidden;
+}
