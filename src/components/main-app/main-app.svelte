@@ -7,6 +7,7 @@
   import ContentSection from 'components/content-section';
   import AboutMe from 'components/about-me';
   import SkillsList from 'components/skills-list';
+  import Education from 'components/education';
 </script>
 
 <Page>
@@ -47,7 +48,7 @@
           title="Образование"
           mods="{{ type: 'education' }}"
         >
-          TODO
+          <Education></Education>
         </ContentSection>
       </Page__Stripe>
 
