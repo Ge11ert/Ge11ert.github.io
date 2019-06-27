@@ -9,3 +9,6 @@ require('./__cell/_type/_period/education__cell_type_period.scss');
 require('./__kind/education__kind.scss');
 require('./__name/education__name.scss');
 require('./__row/education__row.scss');
+
+require('./__certificates-list/education__certificates-list.scss');
+require('./__certificate/education__certificate.scss');

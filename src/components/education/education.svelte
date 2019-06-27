@@ -1,4 +1,7 @@
 <script>
+  import Spoiler from 'components/spoiler';
+  import Certificate from 'components/certificate';
+  import certificates from 'data/certificates';
   export let mods = {};
   export let mix = [];
 </script>
@@ -68,4 +71,21 @@
       </tr>
     </tbody>
   </table>
+
+  <Spoiler
+    title="Сертификаты:"
+    mix="education__certificates"
+  >
+    <ul class="education__certificates-list">
+      {#each certificates as {title, href, source} }
+        <li class="education__certificate">
+         <Certificate
+           href={href}
+           text={title}
+           imageSrc={source}
+         />
+        </li>
+      {/each}
+    </ul>
+  </Spoiler>
 </div>
