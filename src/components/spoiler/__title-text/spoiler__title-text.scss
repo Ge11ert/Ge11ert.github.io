@@ -1,0 +1,16 @@
+@import 'common/stylesheets/breakpoints';
+
+.spoiler__title-text {
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $laptop) {
+    font-size: 18px;
+  }
+}

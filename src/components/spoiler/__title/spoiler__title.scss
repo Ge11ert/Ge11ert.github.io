@@ -1,0 +1,19 @@
+@import 'common/stylesheets/breakpoints';
+
+.spoiler__title {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    padding: 10px 20px;
+  }
+
+  @media (min-width: $laptop) {
+    padding: 10px 30px;
+  }
+}
