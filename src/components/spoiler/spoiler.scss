@@ -1,0 +1,13 @@
+@import 'common/stylesheets/colour-palette';
+@import 'common/stylesheets/breakpoints';
+
+.spoiler {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 40px;
+  background-color: $light-grey;
+  border: 1px solid $mid-grey;
+}

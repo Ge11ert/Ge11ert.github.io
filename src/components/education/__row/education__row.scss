@@ -1,0 +1,9 @@
+@import 'common/stylesheets/colour-palette';
+
+.education__row {
+  &:not(:last-child) {
+    > .education__cell {
+      border-bottom: 1px solid $mid-grey;
+    }
+  }
+}

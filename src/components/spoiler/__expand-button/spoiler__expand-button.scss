@@ -1,0 +1,26 @@
+@import 'common/stylesheets/breakpoints';
+
+.spoiler__expand-button {
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent url('./spoiler__expand-button.svg') no-repeat center;
+  background-size: 24px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  @media (min-width: $tablet) {
+    background-size: 32px;
+  }
+}
