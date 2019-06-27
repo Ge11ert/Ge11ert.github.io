@@ -1,0 +1,5 @@
+@import 'common/stylesheets/mixins';
+
+.certificate__text {
+  @include visually-hidden;
+}
