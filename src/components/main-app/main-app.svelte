@@ -54,15 +54,6 @@
 
       <Page__Stripe>
         <ContentSection
-          title="Мои работы"
-          mods="{{ type: 'projects' }}"
-        >
-          TODO
-        </ContentSection>
-      </Page__Stripe>
-
-      <Page__Stripe>
-        <ContentSection
           title="Контакты"
           mods="{{ type: 'contacts' }}"
         >
