@@ -27,7 +27,7 @@
         Персональная страница фронтенд-разработчика
       </PageTitle>
 
-      <Page__Stripe>
+      <Page__Stripe id="about-me">
         <ContentSection
           title="Обо мне"
           mods="{{ type: 'about-me' }}"
@@ -36,7 +36,7 @@
         </ContentSection>
       </Page__Stripe>
 
-      <Page__Stripe>
+      <Page__Stripe id="skills">
         <ContentSection
           title="Мои навыки"
           mods="{{ type: 'skills' }}"
@@ -45,7 +45,7 @@
         </ContentSection>
       </Page__Stripe>
 
-      <Page__Stripe>
+      <Page__Stripe id="education">
         <ContentSection
           title="Образование"
           mods="{{ type: 'education' }}"
@@ -54,7 +54,7 @@
         </ContentSection>
       </Page__Stripe>
 
-      <Page__Stripe>
+      <Page__Stripe id="contacts">
         <ContentSection
           title="Контакты"
           mods="{{ type: 'contacts' }}"
