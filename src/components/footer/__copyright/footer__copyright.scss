@@ -1,0 +1,14 @@
+@import 'common/stylesheets/breakpoints';
+@import 'common/stylesheets/colour-palette';
+
+.footer__copyright {
+  margin: 0;
+  margin-right: 30px;
+  padding: 20px 0;
+  color: $white;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    margin-right: 100px;
+  }
+}

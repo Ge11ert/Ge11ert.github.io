@@ -12,10 +12,6 @@ export default [
     link: '#education',
   },
   {
-    title: 'Портфолио',
-    link: '#works',
-  },
-  {
     title: 'Контакты',
     link: '#contacts',
   },
