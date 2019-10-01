@@ -9,6 +9,7 @@
   import SkillsList from 'components/skills-list';
   import Education from 'components/education';
   import Contacts from 'components/contacts';
+  import Footer from 'components/footer';
 </script>
 
 <Page>
@@ -62,5 +63,7 @@
         </ContentSection>
       </Page__Stripe>
     </Page__Main>
+
+    <Footer></Footer>
   </Page__Content>
 </Page>

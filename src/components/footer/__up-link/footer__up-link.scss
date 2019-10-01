@@ -1,0 +1,39 @@
+@import 'common/stylesheets/breakpoints';
+@import 'common/stylesheets/colour-palette';
+
+.footer__up-link {
+  position: relative;
+  min-width: 65px;
+  color: $white;
+  transition: all 0.2s;
+  text-decoration: none;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: $white;
+    opacity: 0;
+
+    transform: translateY(15px);
+    transition: transform 0.2s, opacity 0.1s;
+  }
+
+  &:hover,
+  &:focus {
+    letter-spacing: 1px;
+    transform: scale(1.1);
+
+    &::after {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
