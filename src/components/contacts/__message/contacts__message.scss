@@ -1,0 +1,23 @@
+@import 'common/stylesheets/colour-palette';
+
+.contacts__message {
+  display: block;
+  width: calc(100% - 40px);
+  min-height: 40px;
+  padding: 10px 20px;
+  border: 1px solid $dark-grey;
+  border-radius: 0;
+  font-size: 15px;
+  line-height: 20px;
+  resize: vertical;
+
+  &:focus {
+    border: 1px solid $main-purple;
+    outline: none;
+
+    + .contacts__form-label {
+      transform: translate(-20px, -50px) scale(0.85);
+      color: $main-purple;
+    }
+  }
+}
