@@ -1,12 +1,55 @@
-.DS_Store
-.idea
-*.ai
+# -- Node.js --
+
+# Logs
+logs
 *.log
-*.pdf
-*.psd
-*.sublime*
-node_modules/
-build/
-npm-debug.*
-Thumbs.db
-.tern-project
+npm-debug.log*
+
+# Dependency directory
+/node_modules
+
+# Optional npm cache directory
+.npm
+
+# -- IDEA --
+/.idea
+
+## File-based project format:
+*.ipr
+*.iws
+*.iml
+
+# -- Vim --
+
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+
+# session
+Session.vim
+
+# temporary
+.netrwhist
+*~
+/tmp
+
+# -- Eclipse --
+*.swp
+
+# -- OS X --
+.DS_Store
+
+# -- Public --
+/public
+
+# -- Tests --
+/test-reports
+/gemini-*
+/screenshots
+
+# -- Sass --
+.sass-cache
+
+# -- Linters --
+.eslintcache
+.stylelintcache
