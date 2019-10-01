@@ -8,6 +8,7 @@
   import AboutMe from 'components/about-me';
   import SkillsList from 'components/skills-list';
   import Education from 'components/education';
+  import Contacts from 'components/contacts';
 </script>
 
 <Page>
@@ -57,7 +58,7 @@
           title="Контакты"
           mods="{{ type: 'contacts' }}"
         >
-          TODO
+          <Contacts/>
         </ContentSection>
       </Page__Stripe>
     </Page__Main>
