@@ -36,7 +36,7 @@
   },
   "scripts": {
     "stylelint": "stylelint 'src/sass/**/*.scss' --syntax scss",
-    "eslint": "eslint src/js/**/*.js",
+    "eslint": "eslint --cache -c .eslintrc --ext .js ./src",
     "test": "npm run stylelint && npm run eslint",
     "build": "webpack --config ./config/webpack.app.base.js",
     "build-production": "ENV=production webpack --config ./config/webpack.app.production.js",
