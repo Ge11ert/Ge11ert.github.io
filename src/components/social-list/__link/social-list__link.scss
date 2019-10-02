@@ -1,0 +1,18 @@
+@import 'common/stylesheets/colour-palette';
+
+.social-list__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  color: $main-grey;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $bronze;
+  }
+
+  &:active {
+    color: rgba($bronze, 0.6);
+  }
+}

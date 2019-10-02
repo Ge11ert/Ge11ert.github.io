@@ -1,0 +1,21 @@
+@import 'common/stylesheets/breakpoints';
+
+.skills-list__icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+
+  + .skills-list__text {
+    margin-left: 10px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 36px;
+    height: 36px;
+
+    + .skills-list__text {
+      margin-left: 20px;
+    }
+  }
+}

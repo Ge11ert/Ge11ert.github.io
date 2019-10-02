@@ -1,0 +1,13 @@
+@import 'common/stylesheets/mixins';
+@import 'common/stylesheets/breakpoints';
+
+.education__cell_type_kind {
+  @include visually-hidden;
+
+  @media (min-width: $laptop) {
+    @include undo-visually-hidden;
+
+    vertical-align: top;
+    font-weight: 700;
+  }
+}

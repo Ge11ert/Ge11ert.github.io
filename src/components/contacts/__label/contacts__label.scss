@@ -1,0 +1,7 @@
+.contacts__label {
+  font-weight: 700;
+
+  + .contacts__link {
+    margin-left: 40px;
+  }
+}

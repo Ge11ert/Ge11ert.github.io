@@ -1,8 +1,21 @@
-root: true
-
-env:
-  browser: true
-  amd: true
-
-extends:
-  "htmlacademy/es5"
+{
+  "extends": "airbnb-base",
+  "env": {
+    "browser": true
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "config/webpack.app.base.js"
+      }
+    }
+  },
+  "rules": {
+    "no-plusplus": "off",
+    "global-require": "off",
+    "camelcase": "off"
+  },
+  "plugins": [
+    "svelte3"
+  ]
+}

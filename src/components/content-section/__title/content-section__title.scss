@@ -1,0 +1,60 @@
+@import 'common/stylesheets/breakpoints';
+@import 'common/stylesheets/colour-palette';
+
+.content-section__title {
+  position: relative;
+  padding: 8px;
+  padding-left: 40px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 26px;
+    height: 26px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 15px;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 800;
+    color: rgba($main-grey, 0.04);
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $mobile-mid) {
+    &::after {
+      top: 0;
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    padding: 10px;
+    padding-left: 56px;
+
+    &::before {
+      top: 12px;
+      width: 36px;
+      height: 36px;
+    }
+
+    &::after {
+      top: -3px;
+      font-size: 56px;
+      line-height: 60px;
+    }
+  }
+
+  + .content-section__body {
+    margin-top: 50px;
+  }
+}

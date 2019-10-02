@@ -1,0 +1,11 @@
+@import 'common/stylesheets/colour-palette';
+
+.spoiler_expanded {
+  .spoiler__title {
+    border-bottom: 1px solid $mid-grey;
+  }
+
+  .spoiler__content {
+    display: block;
+  }
+}

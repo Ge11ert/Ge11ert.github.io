@@ -1,0 +1,5 @@
+@import 'common/stylesheets/mixins';
+
+.navigation__button-text {
+  @include visually-hidden;
+}

@@ -1,0 +1,10 @@
+@import 'common/stylesheets/breakpoints';
+
+.contacts__details {
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet) {
+    padding-top: 14px;
+    margin-bottom: 0;
+  }
+}

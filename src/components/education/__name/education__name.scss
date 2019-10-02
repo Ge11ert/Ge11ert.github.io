@@ -1,0 +1,9 @@
+.education__name {
+  position: relative;
+  margin: 0;
+  font-weight: 700;
+
+  + .education__details {
+    margin-top: 15px;
+  }
+}
