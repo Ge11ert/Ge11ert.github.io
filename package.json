@@ -1,6 +1,6 @@
 {
   "name": "ge11ert.github.io",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "персональная страница",
   "dependencies": {
     "bem-react-helper": "1.1.2"
