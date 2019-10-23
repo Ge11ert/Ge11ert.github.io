@@ -5,7 +5,8 @@
   "dependencies": {
     "@webcomponents/custom-elements": "1.3.0",
     "bem-react-helper": "1.1.2",
-    "core-js": "3.3.3"
+    "core-js": "3.3.3",
+    "picturefill": "3.0.3"
   },
   "devDependencies": {
     "@babel/plugin-proposal-object-rest-spread": "7.6.2",
