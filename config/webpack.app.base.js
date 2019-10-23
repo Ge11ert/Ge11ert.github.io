@@ -15,7 +15,7 @@ module.exports = {
   name: 'base',
   mode: 'none',
   entry: {
-    app: ['./src/app.js'],
+    app: ['@webcomponents/custom-elements', 'core-js/stable', './src/app.js'],
   },
   output: {
     path: path.resolve(projectBaseDir, projectDistDir),
@@ -31,15 +31,35 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.svelte$/,
-        exclude: /node_modules/,
+        test: /\.m?js$/,
+        include: [/svelte/],
         use: {
-          loader: 'svelte-loader',
+          loader: 'babel-loader',
           options: {
-            emitCss: environment !== 'dev',
-            hotReload: environment === 'dev',
+            presets: ['@babel/preset-env'],
+            plugins: ['@babel/plugin-proposal-object-rest-spread'],
           },
         },
+      },
+      {
+        test: /\.svelte$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
+              plugins: ['@babel/plugin-proposal-object-rest-spread'],
+            },
+          },
+          {
+            loader: 'svelte-loader',
+            options: {
+              emitCss: environment !== 'dev',
+              hotReload: environment === 'dev',
+            },
+          },
+        ],
       },
       {
         test: /\.scss$/,
