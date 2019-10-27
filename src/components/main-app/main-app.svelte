@@ -6,6 +6,7 @@
   import HeaderBanner from 'components/header-banner';
   import ContentSection from 'components/content-section';
   import AboutMe from 'components/about-me';
+  import SkillsGraph from 'components/skills-graph';
   import SkillsList from 'components/skills-list';
   import Education from 'components/education';
   import Contacts from 'components/contacts';
@@ -41,7 +42,7 @@
           title="Мои навыки"
           mods="{{ type: 'skills' }}"
         >
-          <SkillsList></SkillsList>
+          <SkillsGraph></SkillsGraph>
         </ContentSection>
       </Page__Stripe>
 

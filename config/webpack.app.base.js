@@ -26,7 +26,7 @@ module.exports = {
       path.join(projectBaseDir, 'src'),
       'node_modules',
     ],
-    extensions: ['.js', '.svelte'],
+    extensions: ['.mjs', '.js', '.svelte'],
   },
   module: {
     rules: [
